@@ -21,7 +21,7 @@
   </div>
   <div class="field">
     <%= f.label :method %><br>
-    <%= f.text_field :method %>
+    <%= select_tag "method", options_for_select([ 'connect','delete','get','head','options','post','put','trace' ], "get") %>
   </div>
   <div class="field">
     <%= f.label :headers %><br>
